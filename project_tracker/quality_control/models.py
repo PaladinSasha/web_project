@@ -72,5 +72,5 @@ class FeatureRequest(models.Model):
             MinValueValidator(1)
         ]
     )
-    craeted_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
