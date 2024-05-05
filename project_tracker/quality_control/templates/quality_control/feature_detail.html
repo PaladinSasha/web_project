@@ -1,0 +1,9 @@
+{% extends 'base/base.html' %}
+{% block content %}
+    <h1>{{ featurerequest.title }}</h1>
+    <p>description: {{ featurerequest.description }}</p>
+    <p>status={{ featurerequest.status }}</p>
+    <p>priority={{ featurerequest.priority }}</p>
+    <p> task={{ featurerequest.task.name }} </p>
+    <p> project=<a href="{% url 'quality_control:information_project_from_features' featurerequest.id featurerequest.project.id %}">{{featurerequest.project}}</a><p>
+{% endblock %}
