@@ -39,3 +39,6 @@ class Task(models.Model):
         choices=STATUS_CHOISES,
         default='New'
     )
+
+    def __str__(self):
+        return self.name

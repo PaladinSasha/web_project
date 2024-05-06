@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<h2>Добавить отчёт об ошибке</h2>
+    <form method="post">
+        {% csrf_token %}
+        <!--  Отображает поля формы обёрнутые в параграфы -->
+        {{ form.as_p }}
+        <button type="submit">Создать отчёт об ошибке</button>
+    </form>
+{% endblock %}

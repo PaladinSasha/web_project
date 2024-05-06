@@ -15,4 +15,6 @@ urlpatterns = [
     path('features/<int:feature_id>/', views.FeatureDetailView.as_view(), name='feature_id_detail'),
     path('features/<int:feature_id>/information_project/<int:project_id>/', views_from_tasks.ProjectDetailView.as_view(),
          name='information_project_from_features'),
+    path('bugreport/new/', views.create_bugreport, name='create_bugreport'),
+    path('features/new/', views.create_featurerequest, name='create_featurerequest')
 ]
